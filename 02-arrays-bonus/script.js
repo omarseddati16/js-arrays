@@ -17,11 +17,11 @@ const reversedTeachers = teachers.reverse();
 const longNames = teachers.filter((teachers) => teachers.length >= 5);
 
 // 3. Rimuovi 'Ed' dall'array teachers
-const isFabioPresent = teachers.splice(5, 1);
+teachers.splice(5, 1);
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
-teachers.includes("fabio");
+const isFabioPresent = teachers.includes("Fabio");
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
 const teachersString = teachers.join();
